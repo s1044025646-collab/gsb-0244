@@ -1,0 +1,20 @@
+{
+  "name": "bloom-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Bloom filter membership query & false-positive observation backend (API + CLI)",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "cli": "tsx src/cli.ts",
+    "demo": "tsx src/demo.ts",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
